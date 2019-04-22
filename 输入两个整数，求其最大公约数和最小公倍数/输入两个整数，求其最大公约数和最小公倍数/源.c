@@ -41,7 +41,7 @@ int fun3(int a, int b) {
 	if (k == 0) {
 		return a;
 	}
-	if (k != 0) {
+	else  {
 		return (2 * k*a);
 	}
 }
