@@ -7,9 +7,10 @@ void Swap(int* x, int* y) {
 }
 void Bobblesort(int* arr, int size) {
 	int bound = 0;
+	//外层循环结束一次找到最大值，次大值
 	for (bound=0; bound < size; ++bound) {
-		for (int cur = size-1; cur > bound; cur--) {
-			if (arr[cur - 1] < arr[cur]) {
+		for (int cur =bound+1; cur >4; cur--) {
+			if (arr[cur -1] < arr[cur]) {
 				Swap(&arr[cur - 1], &arr[cur]);
 			}
 		}
