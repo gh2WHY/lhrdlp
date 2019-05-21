@@ -1,0 +1,5 @@
+﻿  源.c
+c:\pratise\lhrdlp\测试次方\测试次方\源.c(19): warning C4013: “gets”未定义；假设外部返回 int
+c:\pratise\lhrdlp\测试次方\测试次方\源.c(21): warning C4013: “strlen”未定义；假设外部返回 int
+c:\pratise\lhrdlp\测试次方\测试次方\源.c(29): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  测试次方.vcxproj -> C:\pratise\lhrdlp\测试次方\Debug\测试次方.exe

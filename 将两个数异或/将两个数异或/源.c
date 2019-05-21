@@ -1,6 +1,7 @@
 #define  _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 void Changer(int n, int m) {
 	int a[30], b[30];
 	int i = 0, j = 0;
@@ -49,6 +50,36 @@ void Changer(int n, int m) {
 		printf("%d", c[x]);
 	}
 	printf("\n");
+	//将二进制的结果转化为十进制
+	
+	int   y=0 ;
+	/*,t=0,p=0;
+	for (x = 0,p=max-1; x <=p; ++x,--p) {
+		t = c[x];
+		c[x] = c[p];
+		c[p] = t;
+	}
+	printf("逆置后数组中的元素为:\n");
+	for (x = 0; x < max; ++x) {
+		printf("%d", c[x]);
+	}
+	printf("\n");*/
+	for (x= 0; x<max; x++)    //循环检查输入二进制数的1
+
+	{
+
+		if (c[x] == 1)         //如果为1，开始计算转换为十进制
+
+		{
+			y = y + pow(2, max - x - 1);//这一句不执行是什么原因
+			
+		}
+		else {
+			y = y + 0;
+		}
+	}
+	printf("%d\n", y); 
+	
 }
 int main() {
 	int n = 0, m = 0;
