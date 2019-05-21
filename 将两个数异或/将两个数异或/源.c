@@ -26,14 +26,13 @@ void Changer(int n, int m) {
 		m /= 2;
 		J = j;
 	} while (m != 0);
-
 	for (j--; j >= 0; --j) {
 		printf("%d", b[j]);
 		
 	}printf("\n");
 	printf("J:%d,I:%d", J,I);
 	
-	for (i = 2, j = 2; i > 0, j > 0; i--, j--) {
+	for (i = I-1, j = J-1; i >= 0, j >= 0; i--, j--) {
 		if (a[i] ==b[j]) {
 			c[x++] = 0;
 		
@@ -45,7 +44,8 @@ void Changer(int n, int m) {
 	}
 	printf("\n");
 	printf("异或之后的结果是:\n");
-	for (x = 0;x<4; ++x) {
+	int max = (I > J) ? I : J;
+	for (x = 0;x<max; ++x) {
 		printf("%d", c[x]);
 	}
 	printf("\n");
